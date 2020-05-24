@@ -1,0 +1,7 @@
+/* Fullsize content div, hide left menu. */
+#leftmenu { display: none !important; }
+#content { margin: 0px !important; }
+#leftmenucontentwrapper { 
+	background-color: #fff !important;
+	border-radius: 10px !important;
+}

@@ -1,0 +1,82 @@
+#content {
+	position: static !important;	/* main.css sets relative, need to override that for big absolute pics. */
+}
+
+#BigPicFrameLayer {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 3000px;
+	width: 100%;
+	background-color: #000;	
+	opacity: .3;
+	filter: alpha(opacity=30);
+	z-index: 1;
+}
+#BigPicFrame {
+	font-family: arial;
+	font-size: 16px;
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	top: 50px;
+	left: 0px;
+	z-index: 2;
+	min-width: 600px;
+	text-align: center;
+}
+
+.BigPic {
+	position: relative;
+	border: 1px solid #000;
+	margin: 10px;
+}
+
+.BigPicSmall {
+	cursor: pointer;
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 2px #333;
+}
+
+.BigPicLinks, .BigPicLinks:VISITED {
+	color: #fff;
+	font-size: 18px;
+	font-family: verdana;
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid #666;
+	padding: 10px;
+	background-color: #000;
+	cursor: pointer;
+}
+.BigPicLinks:HOVER {
+	background-color: #333;
+	text-decoration: underline;
+}
+
+.ImgInfoText {
+	font-style: italic;
+	font-size: 11px;	
+}
+
+#Changelog {
+	display: none;
+	padding: 2px;
+	border: 2px dashed #ccc;
+	width: 450px;
+	margin: 0 auto;
+	font-style: 11px;
+	font-family: Arial;
+}
+#Changelog UL {
+	list-style-type: circle;
+	list-style-image:url('media/changelog_wrench.gif');
+}
+#Changelog UL LI {
+	padding-bottom: 5px;
+}
+
+.changelog, .changelog:VISITED {
+	font-size: 11px;
+	color: #00f;
+}
